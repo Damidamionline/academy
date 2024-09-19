@@ -2,15 +2,15 @@ body {
     margin: 0px;
     padding: 0px;
     line-height: 1.0;
-    min-height: var(--viewport-height);
     min-width: 320px;
 }
 .overall {
-    min-height: var(--viewport-height);
+    min-height: 500px;
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
+    min-width: 100%;
 }
 ul li a {
     text-decoration: none;
@@ -78,8 +78,6 @@ ul {
 }
 .button li a ,.welcome{
     display: inline-block;
-    width: 6.5rem;
-    height: 2.25rem;
     line-height: calc(2.25rem - 2px);
     padding: 0 0.5rem;
     vertical-align: middle;
@@ -93,7 +91,6 @@ ul {
     direction: var(--site-language-direction);
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 .button li a ,.welcome {
     align-items: center;
@@ -183,8 +180,8 @@ hr {
 }
 
 .button li a:hover {
+    transition: 0.5s;
     border-color: black;
-    color: black;
     text-decoration: none;
 }
 footer {
@@ -241,6 +238,11 @@ ul.icons {
     background-color: rgb(126, 208, 241);
     color: white;
 }
+.n04:hover {
+    transition: 0.5s;
+    background-color: yellow;
+    color: white;
+}
 
 /* about */
 
@@ -256,18 +258,18 @@ ul.icons {
 }
 #paragraph2 {
     color: #5e5e5e;
+}
+.paragraph3 {
+    display: block;
+    position: relative;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.025rem;
     width: calc(100% + 0.025rem);
     font-size: 1em;
     line-height: 1.875;
     font-weight: 200;
-    font: inherit;
 }
-.paragraph3 {
-    display: block;
-    position: relative;
-}
+
 #paragraph2 span.paragraph3:nth-child(n + 2) {
     margin-top: 1rem;}
 
@@ -283,6 +285,7 @@ span.paragraph3 {
     width: 60%;
     padding: 5px 20px;
     margin: 20px 0;
+    height: 19.7px;
 }
 .subscribe {
     border: #474747 solid 2px;
@@ -296,3 +299,262 @@ span.paragraph3 {
     color: rgb(217, 217, 217);
     cursor: pointer;
 }
+
+
+.caro {
+    width: 40%;
+    margin: 30px;
+    border: #474747 solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+
+
+}
+
+.membershead {
+    text-transform: uppercase;
+    color: #474747;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.4rem;
+    width: 100%;
+    font-size: 35px;
+    line-height: 1.25;
+    font-weight: 500;
+    margin: 16.5px 0;
+    text-align: center;
+}
+
+.memberall {
+    display: flex;
+    justify-content: center;
+}
+.sectiondetail {
+    background-color: rgb(242, 241, 241);
+    padding: 20px;
+    display: flex;
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.framer {
+    width: 130px;
+    border-radius: 50%;
+    margin: 20px;
+    border: #989797 2px solid;
+    padding: 5px;
+}
+.idcard {
+    background-color: rgb(96, 58, 161);
+    justify-content: center;
+    display: inline-block;
+    border-radius: 10px;
+    width: 100%;
+    background-image: url(images/rain-drops-dew-water-drops-gray-car-roof-after-stopped-raining-selective-focus-waterproof-surface-soft-focus-leave-space-writing-text-background_109549-2239.jpg);
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.idcover {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.iddetail {
+    color: #989797;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    line-height: 1.75;
+    font-weight: 400;
+}
+.innerdetail {
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.headingmem {
+    margin: 0 0;
+    letter-spacing: 0rem;
+    width: 100%;
+    font-size: 2.5em;
+    color: #ffffff;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.imagediv {
+    display: flex;
+    justify-content: center;
+ }
+ .blur {
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    width: 100%;
+ }
+
+ a.bigger {
+    font-size: 20px;
+    border-color: black;
+ }
+ .shrink {
+    margin-top: 5px;
+ }
+ #border {
+    border-color: #989797;
+ }
+ .shadowbox {
+    padding: 10px;
+    min-width: 25%;
+ }
+ .shadowbox:hover {
+    padding: 0;
+    transition: 1s;
+ }
+ .idcard:hover {
+    box-shadow: 10px 10px 20px grey;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-wrap: wrap;
+ }
+ .membersnav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position:relative;
+ }
+ .memberhead {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 25px;
+    justify-content: space-between;
+    width: 100%;
+ }
+
+ .buttonmem {
+    margin: 20px;
+ }
+ .buttonmem li {
+    margin: 0 20px;
+ }
+ .memshi {
+    border: none;
+    color: #5e5e5e;
+ }
+
+ .footer1 {
+    background-color: black;
+    width: 100%;
+ }
+
+ .footerblock {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 5px;
+ }
+
+ .footerflex {
+    flex-basis: 20%;
+    color: white;
+    text-align: center;
+ }
+ .footerflex img {
+    width: 5rem;
+    margin-bottom: 20px;
+    border-radius: 50%;
+ }
+ .footerflex p {
+    color: #989797;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+ }
+ .footerflex p a {
+    text-decoration: none;
+    color: #989797;
+ }
+ .footerflex h3 {
+    font-size: 22px;
+ }
+ .copy {
+    color: #989797;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+ }
+ .last {
+    color: #989797;
+ }
+
+ .info {
+    margin-top: 10px;
+ }
+ 
+
+ @media screen and (max-width:1000px) {
+    .caro {
+        width: 100%;
+    }
+    .buttonmem li {
+        margin: 0 5px;
+     }
+     .membershead p {
+        font-size: 30px;
+        word-spacing: 0.5px;
+     }
+     .footerflex {
+        flex-basis: 25%;
+    }
+    .top, .dissapear {
+    margin-top: 5px;
+    }
+    .shadowbox {
+    min-width: 50%;
+    }
+}
+
+ @media screen and (max-width:480px) {
+    .buttonmem li {
+        font-size: 20px;
+     }
+     
+ }
+
+ @media screen and (max-width:700px) {
+     .dissapear {
+        display: none;
+     }
+     .membershead p {
+        font-size: 20px;
+        word-spacing: 0.3px;
+     }
+     
+ }
+ @media screen and (min-width:700px) {
+    .dissapear1 {
+       display: none;
+    }
+    
+}
+ @media screen and (max-width:800px) {
+    .footerblock {
+        display: block;
+     }
+     .footerflex {
+        margin-bottom: 30px;
+     }
+     .idcover {
+        display: block;
+     }
+     
+ }
